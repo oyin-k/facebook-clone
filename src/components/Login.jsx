@@ -1,6 +1,7 @@
 import { Button } from "@material-ui/core";
 import React from "react";
 import "./Login.css";
+import logo from "../assets/facebook-logo-2019.png";
 import { auth, provider } from "../services/firebase";
 import { actionTypes } from "./reducer";
 import { useStateValue } from "./StateProvider";
@@ -24,10 +25,7 @@ function Login() {
   return (
     <div className="login">
       <div className="login__logo">
-        <img
-          src="https://cdn.freebiesupply.com/logos/large/2x/facebook-logo-2019.png"
-          alt=""
-        />
+        <img src={logo} alt="" />
         <img
           src="https://www.logo.wine/a/logo/Facebook/Facebook-Logo.wine.svg"
           alt=""
