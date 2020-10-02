@@ -12,6 +12,7 @@
 .header__left {
   display: flex;
   justify-content: space-evenly;
+  flex: 0.5;
 }
 
 .header__input {
@@ -72,6 +73,7 @@
 
 .header__right {
   display: flex;
+  flex: 0.5;
 }
 
 .header__info {
@@ -81,4 +83,26 @@
 
 .header__info h4 {
   margin-left: 10px;
+}
+
+@media (max-width: 1120px) {
+  .MuiButtonBase-root {
+    display: none !important;
+  }
+}
+
+@media (max-width: 920px) {
+  .header__left {
+    justify-content: flex-start;
+  }
+  .header__input {
+    display: none !important;
+  }
+  .header__right,
+  .header__info {
+    justify-content: flex-end;
+  }
+  .header__info h4 {
+    display: none !important;
+  }
 }

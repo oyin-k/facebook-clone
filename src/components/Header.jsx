@@ -50,16 +50,16 @@ function Header() {
           <Avatar src={user.photoURL} />
           <h4>{user.displayName}</h4>
         </div>
-        <IconButton>
+        <IconButton className="header__rightButton">
           <AddIcon />
         </IconButton>
-        <IconButton>
+        <IconButton className="header__rightButton">
           <ForumIcon />
         </IconButton>
-        <IconButton>
+        <IconButton className="header__rightButton">
           <NotificationsActiveIcon />
         </IconButton>
-        <IconButton>
+        <IconButton className="header__rightButton">
           <ExpandMoreIcon />
         </IconButton>
       </div>
